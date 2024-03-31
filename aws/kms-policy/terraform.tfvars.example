@@ -1,0 +1,20 @@
+key_policy = [
+    {
+      sid       = "Allow use of the key"
+      effect    = "Allow"
+      principals = [
+        {
+          type        = "AWS"
+          identifiers = ["arn:aws:iam::123456789012:role/ANALYST"]
+        },
+      ]
+      actions   = [
+        "kms:Encrypt",
+        "kms:Decrypt",
+        "kms:ReEncrypt*",
+        "kms:GenerateDataKey*",
+        "kms:DescribeKey"
+    	]
+      resources = ["*"]
+    }
+]
