@@ -31,8 +31,7 @@ locals {
           type = "AWS"
           identifiers = [
             "arn:aws:iam::${local.aws_account_id}:role/TERRAFORM",
-            "arn:aws:iam::${local.aws_account_id}:role/ADMIN",
-            "arn:aws:iam::${local.aws_account_id}:user/matheus"
+            "arn:aws:iam::${local.aws_account_id}:role/ADMIN"
           ]
         },
       ]

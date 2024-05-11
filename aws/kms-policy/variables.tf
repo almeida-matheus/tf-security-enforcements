@@ -1,5 +1,5 @@
 variable key_policy {
-  description = "Informações da policy"
+  description = "KMS key policy"
   type = list(object({
     sid           = optional(string)
     effect        = string
